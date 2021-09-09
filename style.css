@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: wheat;
+}
+
+:root {
+    --cor-topo:rgb(189, 33, 33);
+    --cor-top-number:rgb(212, 212, 18);
+    --cor-principal:red;
+    --cor-rodape:black;
+    --cor-text:rgb(255, 255, 255);
+    --cor-do-botão-orcamento:rgb(22, 224, 56);
+}
+
+.topo {
+    background-color: var(--cor-topo);
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+}
+
+.produtos {
+    
+}
