@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    background-color: wheat;
 }
 
 :root {
@@ -14,13 +13,107 @@
     --cor-do-botão-orcamento:rgb(22, 224, 56);
 }
 
-.topo {
-    background-color: var(--cor-topo);
+
+/*============= DIV CONTAINER CADASTRO===============*/
+.container-cadastro {
     width: 100%;
     display: flex;
-    font-size: 10px;
+    background-image:url(imagens/fundocadastro.jpg);
 }
 
-.produtos {
-    
+.info-card {
+    padding: 5%;
+    align-self: center;
+    width: 50%;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    color: white;
+}
+.parag1 {
+    margin-top: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+
+/*============= DIV CONTAINER CADASTRO - FORMULARIO ===============*/
+
+.form-cadastro {
+    width: 50%;
+}
+
+button {
+    color: white;
+    border: ;
+}
+
+form {
+    width: 50%;
+}
+
+/*============= DIV FORM-ROW - ESTILIZANDO  ===============*/
+
+.form-row {
+    width: 100%;
+    color: white;
+}
+
+.form-aling {
+    display: flex;
+}
+
+.nome {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 20px;
+}
+
+.sobrenome {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 20px;
+}
+
+.form-aling-email {
+    margin-top: 5%;
+}
+.email {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    padding: 5px 109% 5px 5px;
+}
+
+.form-aling-one {
+    display: flex;
+    margin-top: 5%;
+}
+
+.telefone {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 20px;
+}
+
+.link-envio {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 20px;
+}
+
+.botao {
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 93%;
+    padding: 12px 5px 12px 5px ;
+    margin-top: 8%;
+    cursor:pointer;
+    background-color: transparent;
 }
