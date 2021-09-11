@@ -144,9 +144,30 @@ a:hover {
 }
 
 
+/*============= MAIN - VENDAS ===============*/
 
+.card-vendas {
+  width: 100%;
+}
 
+.card-info-vendas {
+  text-align: center;
+}
 
+.p-vendas {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.btn-vendas {
+  border: none;
+  background-color: rgb(22, 224, 56);
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px 32px 8px 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 
 
 
