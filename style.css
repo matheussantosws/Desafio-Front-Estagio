@@ -18,7 +18,8 @@
 
 .topo {
     text-align: center;
-    background-color: red;
+    background-color:rgb (360, 100%, 49%);
+    background-color:#c20102;
 }
 
 
@@ -64,7 +65,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: red;
+    background:#fe0000;
 }
 
 #menu {
@@ -142,6 +143,56 @@ a:hover {
     top: -7px;
   }
 }
+/*============= MAIN - OPTIONS ===============*/
+.card-option {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dados {
+  background-color: #231f20;
+  padding: 5%;
+}
+.converse {
+  background-color: #1f1b1c;
+  padding: 5%;
+}
+.f-orcamento {
+  background-color: #161415;
+  padding: 5%;
+}
+.f-cadastro {
+  background-color: #0f0d0e;
+  padding: 5%;
+}
+
+.btn-option {
+  cursor:pointer;
+  background-color: transparent;
+  border-radius:10px;
+  border-width: medium;
+  border-style: solid;
+  border-color:white;
+  color:white
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  padding: 8px 32px 8px 32px;
+}
+
+#text-color-option{
+font-size: 15px;
+  color:yellow;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
 
 
 /*============= MAIN - VENDAS ===============*/
@@ -160,6 +211,11 @@ a:hover {
 
 .card-info-vendas {
   text-align: center;
+}
+
+.info-orc-zap {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900
 }
 
 .p-vendas {
