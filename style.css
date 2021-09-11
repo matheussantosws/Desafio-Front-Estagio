@@ -20,11 +20,15 @@
     text-align: center;
     background-color: red;
 }
+
+
 #logo {
     color: white;
 }
 #text-color {
-    color: yellow;
+  display: inline;
+  color: yellow;
+  font-size: 50%;
 }
 #contato-color {
     color: white;
