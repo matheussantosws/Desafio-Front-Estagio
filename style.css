@@ -271,24 +271,38 @@ form {
 }
 
 
-/*============= FOOTER - ===============*/
+/*============= FOOTER -LOGOTIPO ===============*/
 
 .footer-logotipo {
-    background-color: violet;
-    padding: 10%;
+  background-color:black;
+  padding: 10%;
 }
 
 .footer-cont1 {
-    color: white;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
-
+.footer-cont1, li a {
+  list-style: none;
+  color: white;
+}
 .redes-sociais {
-    color:white
+  color: white;
+  text-align: center;
+  margin-top: 15%;
 }
 
-img, .face {
-    width: 20%;
+.footer-cont2 {
+  margin-top: 6%;
 }
-img, .insta {
-    width: 20%;
+
+/*============= FOOTER - LOCALIZAÇÃO ===============*/
+.localizacao {
+  padding-top: 5%;
+  text-align: center;
+  background-color: black;
+}
+.enderecos {
+  color:white
 }
