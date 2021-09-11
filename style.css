@@ -1,167 +1,135 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
-
-:root {
-    --cor-topo:rgb(189, 33, 33);
-    --cor-top-number:rgb(212, 212, 18);
-    --cor-principal:red;
-    --cor-rodape:black;
-    --cor-text:rgb(255, 255, 255);
-    --cor-do-botão-orcamento:rgb(22, 224, 56);
+main, footer, .localizacao, .footer-logotipo{
+  padding: 0% 2%;
 }
-
-
-/*============= DIV TOPO===============*/
-
-.topo {
-    text-align: center;
-    background-color:rgb (360, 100%, 49%);
-    background-color:#c20102;
-}
-
-
-#logo {
-    color: white;
-}
-#text-color {
-  display: inline;
-  color: yellow;
-  font-size: 50%;
-}
-#contato-color {
-    color: white;
-}
-
-/*============= DIV Header===============*/
-
-body,
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
 a {
-  color: black;
+  color: #fff;
   text-decoration: none;
-  font-family: sans-serif;
+  transition: 0.3s;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  opacity: 0.7;
 }
 
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-#header {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:#fe0000;
-}
-
-#menu {
+nav {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background:#fe0000;
+  height: 8vh;
+}
+
+.nav-list {
   list-style: none;
-  gap: 0.5rem;
+  display: flex;
 }
 
-#menu a {
-  color:white;
-  display: block;
-  padding: 0.5rem;
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
 
-#btn-mobile {
+.mobile-menu {
   display: none;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  #menu {
-    display: block;
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
     position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #e7e7e7;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fe0000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
   }
-  #nav.active #menu {
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
   }
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  }
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-  #hamburger {
-    border-top: 2px solid;
-    width: 20px;
-  }
-  #hamburger::after,
-  #hamburger::before {
-    content: '';
+  .mobile-menu {
     display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
-  #nav.active #hamburger {
-    border-top-color: transparent;
-  }
-  #nav.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
   }
 }
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
 /*============= MAIN - OPTIONS ===============*/
 .card-option {
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .dados {
   background-color: #231f20;
   padding: 5%;
+  width: 100%;
 }
+
 .converse {
   background-color: #1f1b1c;
   padding: 5%;
 }
+
 .f-orcamento {
   background-color: #161415;
   padding: 5%;
 }
+
 .f-cadastro {
   background-color: #0f0d0e;
   padding: 5%;
@@ -174,7 +142,7 @@ a:hover {
   border-width: medium;
   border-style: solid;
   border-color:white;
-  color:white
+  color:white;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   padding: 8px 32px 8px 32px;
@@ -186,11 +154,6 @@ font-size: 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
-
-
-
-
-
 
 
 
@@ -246,121 +209,12 @@ font-size: 15px;
 
 
 
-
-
-
-
-
-/*============= DIV CONTAINER CADASTRO===============*/
-.container-cadastro {
-    width: 100%;
-    display: flex;
-    background-image:url(imagens/fundocadastro.jpg);
-}
-
-.info-card {
-    padding: 5%;
-    align-self: center;
-    width: 50%;
-}
-
-.title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-align: left;
-    color: white;
-}
-.parag1 {
-    margin-top: 8%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: white;
-    text-align: left;
-}
-
-
-/*============= DIV CONTAINER CADASTRO - FORMULARIO ===============*/
-
-.form-cadastro {
-    width: 50%;
-}
-
-button {
-    color: white;
-    border: ;
-}
-
-form {
-    width: 50%;
-}
-
-/*============= DIV FORM-ROW - ESTILIZANDO  ===============*/
-
-.form-row {
-    width: 100%;
-    color: white;
-}
-
-.form-aling {
-    display: flex;
-}
-
-.nome {
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 20px;
-}
-
-.sobrenome {
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 20px;
-}
-
-.form-aling-email {
-    margin-top: 5%;
-}
-.email {
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    padding: 5px 109% 5px 5px;
-}
-
-.form-aling-one {
-    display: flex;
-    margin-top: 5%;
-}
-
-.telefone {
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 20px;
-}
-
-.link-envio {
-    border: none;
-    border-radius: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 20px;
-}
-
-.botao {
-    border-color: white;
-    border-radius: 10px 10px 10px 10px;
-    width: 93%;
-    padding: 12px 5px 12px 5px ;
-    margin-top: 8%;
-    cursor:pointer;
-    background-color: transparent;
-}
-
-
 /*============= FOOTER -LOGOTIPO ===============*/
 
 .footer-logotipo {
   background-color:black;
   padding: 10%;
+  margin-top: 50%;
 }
 
 .footer-cont1 {

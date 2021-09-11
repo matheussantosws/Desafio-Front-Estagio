@@ -1,226 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!--Link do Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--Link do CSS-->
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+  <head>
     <!--Link do google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvedor Estágio Front-end</title>
-</head>
-<body>
-
-
-  <div class="topo">
-    <ul>
-      <li id="contato-color" >ENTRE EM CONTATO CONOSCO</li>
-      <li id="text-color" >(33)3333-3333</li>
-      <li id="text-color" >(33)93333-3333</li>
-      <li id="text-color" >comercial@comercial.com.br</li>
-    </ul>
-  </div>
-
-  <!--Container Header-->
-  <header id="header">
-    <a id="logo" href="">Logotipo</a>
-    <nav id="nav">
-      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-        <span id="hamburger"></span>
-      </button>
-      <ul id="menu" role="menu">
-        <li><a href="/">QUEM SOMOS</a></li>
-        <li><a href="/">GONDOLAS</a></li>
-        <li><a href="/">MÓVEIS DE AÇO</a></li>
-        <li><a href="/">ARMAGENAGEM</a></li>
-        <li><a href="/">CONTATO</a></li>
-      </ul>
-    </nav>
-  </header>
-  <script src="./script.js"></script>
-
-
-  <div class="container">
-    <!--Container de Cadastro
-<div class="container-cadastro">
-  <div class="info-card">
-    <h1 class="title">
-      SEJA UM REVENDEDOR
-      E <span style="color: red">OBTENHA GRANDES LUCROS</span>
-      EM SUAS VENDAS!
-    </h1>
-    <p class="parag1">
-      Cadastre-se usando <br>
-      o formulário ao lado
-    </p>
-  </div>
-
-  <form>
-    <div class="form-row">
-      <div class="form-aling">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Nome*</label>
-          <input type="email" class="nome" >
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">LOGOTIPO</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Sobrenome*</label>
-          <input type="password" class="sobrenome" >
-        </div>
-      </div>
-      <div class="form-aling-email">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">E-mail*</label>
-          <input type="email" class="email" >
-        </div>
-      </div>
-      <div class="form-aling-one">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Telefone*</label>
-          <input type="email" class="telefone" >
-        </div>
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Link para seu curriculo*</label>
-          <input type="email" class="link-envio" >
-        </div>
-      </div>
-    </div>
-    <button type="submit" class="botao">ENVIAR MEU CADASTRO</button>
-  </form>
--->
-    <div class="card-option">
+        <ul class="nav-list">
+          <li><a href="/">QUEM SOMOS</a></li>
+          <li><a href="/">GONDOLAS</a></li>
+          <li><a href="/">MÓVEIS DE AÇO</a></li>
+          <li><a href="/">ARMAGENAGEM</a></li>
+          <li><a href="/">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <div class="card-option">
       
-      <div class="dados">
-        <h1 id="text-color-option">
-          Quer ser um colaborador ou 
-          representante?
-        </h1>
-        <button type="submit" class="btn-option">PREENCHA SEUS DADOS</button>
+        <div class="dados">
+          <h1 id="text-color-option">
+            Quer ser um colaborador ou 
+            representante?
+          </h1>
+          <button type="submit" class="btn-option">PREENCHA SEUS DADOS</button>
+        </div>
+        <div class="converse">
+          <h1 id="text-color-option">
+            Venda exclusiva para lojistas através do Whatsapp:
+          </h1>
+          <button type="submit" class="btn-option">CONVERSE COM A GENTE</button>
+        </div>
+  
+        <div class="f-orcamento">
+          <h1 id="text-color-option">
+            Gostou de algum dos nossos produtos?
+          </h1>
+          <button type="submit" class="btn-option">FAÇA SEU ORÇAMENTO</button>
+        </div>
+  
+        <div class="f-cadastro">
+          <h1 id="text-color-option">
+            Seja um revendedor agora mesmo!
+          </h1>
+          <button type="submit" class="btn-option">FAÇA SEU CADASTRO</button>
+        </div>
       </div>
 
-      <div class="converse">
-        <h1 id="text-color-option">
-          Venda exclusiva para lojistas através do Whatsapp:
-        </h1>
-        <button type="submit" class="btn-option">CONVERSE COM A GENTE</button>
+
+
+      <div class="card-vendas">
+        <img class="logo-zap" src="imagens/logo whatsapp.png" alt="">
+        <div class="card-info-vendas">
+          <h1 class="info-orc-zap">
+            SOLICITE SEU ORÇAMENTO
+            PELO WHATSAPP
+          </h1>
+          <p class="p-vendas">
+            Venda exclusiva para lojistas
+          </p>
+          <button type="submit" class="btn-vendas">CONVERSE COM A GENTE</button>
+        </div>
       </div>
 
-      <div class="f-orcamento">
-        <h1 id="text-color-option">
-          Gostou de algum dos nossos produtos?
-        </h1>
-        <button type="submit" class="btn-option">FAÇA SEU ORÇAMENTO</button>
+
+    </main>
+    <script src="mobile-navbar.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="footer-logotipo">
+        <ul class="footer-cont1">
+          <li><a href="/">QUEM SOMOS</a></li>
+          <li><a href="/">GÔNDOLAS</a></li>
+          <li><a href="/">MÓVEIS DE AÇO</a></li>
+          <li><a href="/">ARMAGENAGEM</a></li>
+          <li><a href="/">CONTATO</a></li>
+        </ul>
+        <div class="footer-cont2">
+          <ul class="footer-cont1">
+            <li><a href="/">FAÇA SEU ORÇAMENTO</a></li>
+            <li><a href="/">SEJA UM COLABORADOR</a></li>
+          </ul>
+        </div>
+    
+        <div class="redes-sociais">
+          <h6>
+            SIGA-NOS NAS REDES SOCIAIS
+          </h6>
+          <a href="#"><img class="icon-color" src="icons/icon-facebook.svg" alt=""></a>
+          <a href="#"><img class="icon-color" src="icons/icon-instagram.svg" alt=""></a>
+        </div>
       </div>
-
-      <div class="f-cadastro">
-        <h1 id="text-color-option">
-          Seja um revendedor agora mesmo!
-        </h1>
-        <button type="submit" class="btn-option">FAÇA SEU CADASTRO</button>
-
+    
+      <div class="localizacao">
+        <div class="enderecos">
+          <h6> LOJA°BH (a 5 km do centro!)</h6>
+          <p> Av. Professor Mário Werneck,26-2° Andar
+              Belo Horizonte-MG,CEP:30455-610
+              comercial@comercial.com.br
+              <img src="" alt="">
+              <img src="" alt="">
+          </p>
+    
+          <div class="enderecos">
+            <h6> LOJA°BH (a 5 km do centro!)</h6>
+            <p> Av. Professor Mário Werneck,26-2° Andar
+                Belo Horizonte-MG,CEP:30455-610
+                comercial@comercial.com.br
+                <img src="" alt="">
+                <img src="" alt="">
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-
-
-    <div class="card-vendas">
-      <img class="logo-zap" src="imagens/logo whatsapp.png" alt="">
-      <div class="card-info-vendas">
-        <h1 class="info-orc-zap">
-          SOLICITE SEU ORÇAMENTO
-          PELO WHATSAPP
-        </h1>
-        <p class="p-vendas">
-          Venda exclusiva para lojistas
-        </p>
-        <button type="submit" class="btn-vendas">CONVERSE COM A GENTE</button>
-      </div>
-    </div>
-
-      
-
-        
-              
-      
-
-              
-
-<footer>
-  <div class="footer-logotipo">
-    <ul class="footer-cont1">
-      <li><a href="/">QUEM SOMOS</a></li>
-      <li><a href="/">GÔNDOLAS</a></li>
-      <li><a href="/">MÓVEIS DE AÇO</a></li>
-      <li><a href="/">ARMAGENAGEM</a></li>
-      <li><a href="/">CONTATO</a></li>
-    </ul>
-    <div class="footer-cont2">
-      <ul class="footer-cont1">
-        <li><a href="/">FAÇA SEU ORÇAMENTO</a></li>
-        <li><a href="/">SEJA UM COLABORADOR</a></li>
-      </ul>
-    </div>
-
-    <div class="redes-sociais">
-      <h6>
-        SIGA-NOS NAS REDES SOCIAIS
-      </h6>
-      <a href="#"><img class="icon-color" src="icons/icon-facebook.svg" alt=""></a>
-      <a href="#"><img class="icon-color" src="icons/icon-instagram.svg" alt=""></a>
-    </div>
-  </div>
-
-  <div class="localizacao">
-    <div class="enderecos">
-      <h6> LOJA°BH (a 5 km do centro!)</h6>
-      <p> Av. Professor Mário Werneck,26-2° Andar
-          Belo Horizonte-MG,CEP:30455-610
-          comercial@comercial.com.br
-          <img src="" alt="">
-          <img src="" alt="">
-      </p>
-
-      <div class="enderecos">
-        <h6> LOJA°BH (a 5 km do centro!)</h6>
-        <p> Av. Professor Mário Werneck,26-2° Andar
-            Belo Horizonte-MG,CEP:30455-610
-            comercial@comercial.com.br
-            <img src="" alt="">
-            <img src="" alt="">
-        </p>
-      </div>
-    </div>
-  </div>
-
-</footer>
-
-
-
-
-</div>
-  </div>
-</body>
+    
+    </footer>
+  </body>
 </html>
-<!--
-Algumas observações:
-
-- Os banners devem ser rotativos.
-- As fontes utilizadas no projeto foram:
-    Menu: Georgia Regular
-    Títulos, Destaque e Rodapé: Roboto Thin
-    Botões: PT Sans Narrow Bold
-    Valor do produto: Open Sans Bold
-
-DIFERENCIAIS
-
-Serão considerados como diferenciais:
-    - Entrega antecipada
-    - Utilizar HTLM5 e CSS3.
-    - Uso de framework CSS (Bootstrap, Foudation...).
-    - Uso de framework Javascript (Jquery ou Angular ou Prototype…).
-    - Os trabalhos entregues com layouts responsivos.
--->
