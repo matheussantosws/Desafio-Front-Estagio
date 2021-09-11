@@ -2,6 +2,27 @@
   margin: 0;
   padding: 0;
 }
+
+.topo {
+  background-color:#c20102;
+  color:#fedd8a;
+}
+.topo ul {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding-left: 30%;
+}
+
+.info-slide {
+  text-align: right;
+  width: 50%;
+  margin-left: 50%;
+}
+
+
+
+
 main, footer, .localizacao, .footer-logotipo{
   padding: 0% 2%;
 }
@@ -110,7 +131,6 @@ nav {
 /*============= MAIN - OPTIONS ===============*/
 .card-option {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
 }
@@ -163,17 +183,21 @@ font-size: 15px;
 .card-vendas {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.cont-zap {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-zap {
-  width: 20%;
-
+  width: 40%;
 }
 
 .card-info-vendas {
-  text-align: center;
+  text-align:left;
+  width: 50%;
 }
 
 .info-orc-zap {
@@ -184,6 +208,7 @@ font-size: 15px;
 .p-vendas {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 20px;
 }
 
 .btn-vendas {
@@ -191,7 +216,8 @@ font-size: 15px;
   background-color: rgb(22, 224, 56);
   text-align: center;
   border-radius: 10px;
-  padding: 8px 32px 8px 32px;
+  padding: 8px 60px 8px 60px;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -212,19 +238,21 @@ font-size: 15px;
 /*============= FOOTER -LOGOTIPO ===============*/
 
 .footer-logotipo {
-  background-color:black;
+  background-color:#231f20;
   padding: 10%;
   margin-top: 50%;
+  display: ;
 }
 
 .footer-cont1 {
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   color: white;
 }
 .footer-cont1, li a {
   list-style: none;
   color: white;
+  padding: ;
 }
 .redes-sociais {
   color: white;
@@ -240,7 +268,7 @@ font-size: 15px;
 .localizacao {
   padding-top: 5%;
   text-align: center;
-  background-color: black;
+  background-color:#231f20;
 }
 .enderecos {
   color:white
