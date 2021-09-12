@@ -133,6 +133,7 @@ nav {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-top: -6%;
 }
 .dados {
   background-color: #231f20;
@@ -142,17 +143,20 @@ nav {
 
 .converse {
   background-color: #1f1b1c;
-  padding: 5%;
+  padding: 5% 4%;
+  width: 100%;
 }
 
 .f-orcamento {
   background-color: #161415;
   padding: 5%;
+  width: 100%;
 }
 
 .f-cadastro {
   background-color: #0f0d0e;
   padding: 5%;
+  width: 100%;
 }
 
 .btn-option {
