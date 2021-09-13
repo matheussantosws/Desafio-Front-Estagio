@@ -305,14 +305,23 @@ form {
 
 /*============= FOOTER - LOCALIZAÇÃO ===============*/
 .localizacao {
-  padding-top: 5%;
-  text-align: center;
-  background-color:#231f20;
-}
-.enderecos {
-  color:white
+  width: 50%;
+  text-align:left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 45%;
+  margin-top: -20%;
 }
 
+.loc1 {
+  width: 25%;
+}
+
+.loc2 {
+  width: 25%;
+  margin-left: 15%;
+}
 
 
 
