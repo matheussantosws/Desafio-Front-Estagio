@@ -188,6 +188,7 @@ font-size: 15px;
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 5%;
 }
 .cont-zap {
   width: 50%;
@@ -227,9 +228,29 @@ font-size: 15px;
 }
 
 
+/*============= FOOTER - FORMULARIO ===============*/
 
+.container-formulario {
+  width: 100%;
+  margin-top: 5%;
+}
+.card-form {
+  width: 50%;
+  width: 50%;
+  padding: 10%;
+  margin-top: -35%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+.fundo-cadastro-1 {
+  width: 100%;
+  height: 500px;
+}
 
-
+.formulario-info {
+  
+}
 
 
 
