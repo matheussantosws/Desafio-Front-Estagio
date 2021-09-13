@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
     <!--Link do google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,7 +200,7 @@
 
     </form>  
     <div class="container-formulario">
-      <img class="fundo-cadastro-1" src="imagns/fundocadastro.jpg" alt="">
+      <img class="fundo-cadastro-1" src="imagEns/fundocadastro.jpg" alt="">
       <div class="card-form">
           <h1>
             SEJA UM REVENDEDOR E <span style="color: red;">OBTENHA</span>
@@ -208,104 +211,63 @@
           </p>
         </div>
 
-        <div class="formulario-info">
-          <form action="" method="post">
-            <div>
-                <label for="name">Nome*</label>
-                <input type="text" id="name" />
-            </div>
-            <div>
-              <label for="name">Sobrenome*</label>
-              <input type="text" id="sobre" />
-          </div>
-            <!--<div>
-                <label for="mail">E-mail*</label>
-                <input type="email" id="mail" />
-            </div>-->
-            
-            <div class="button">
-                <button type="submit">Enviar sua mensagem</button>
-            </div>
-        </form>
-          
+        <div class="formulario">
+          <form action="">
+            <input class="name" type="text" name="nome" placeholder="First Name" required>
+            <input class="lastname" type="e-mail" name="email" placeholder="Last Name" required>
+            <input class="email" type="e-mail" name="email" placeholder="Email Address" required>
+            <input class="senha" type="e-mail" name="email" placeholder="Password" required>
+            <button>ENVIAR MEU CADASTRO </button>
+          </form>
+        </div>         
         </div>
-
      </div>
-
-
-
-
-
-
-
     </main>
     <script src="mobile-navbar.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-      <div class="footer-logotipo">
-        <ul class="footer-cont1">
-          <h1>
-            LOGOTIPO
-          </h1>
-          <li><a href="/">QUEM SOMOS</a></li>
-          <li><a href="/">GÔNDOLAS</a></li>
-          <li><a href="/">MÓVEIS DE AÇO</a></li>
-          <li><a href="/">ARMAGENAGEM</a></li>
-          <li><a href="/">CONTATO</a></li>
-        </ul>
-        <div class="footer-cont2">
-          <ul class="footer-cont1">
-            <li><a href="/">FAÇA SEU ORÇAMENTO</a></li>
-            <li><a href="/">SEJA UM COLABORADOR</a></li>
-          </ul>
-        </div>
-    
-        <div class="redes-sociais">
-          <h6>
-            SIGA-NOS NAS REDES SOCIAIS
-          </h6>
-          <a href="#"><img class="icon-color" src="icons/icon-facebook.svg" alt=""></a>
-          <a href="#"><img class="icon-color" src="icons/icon-instagram.svg" alt=""></a>
-        </div>
+<!-- CARD content 
+		================================================== -->
+      <div class="content">
       </div>
-    
-      <div class="localizacao">
-        <div class="enderecos">
-          <h6> LOJA°BH (a 5 km do centro!)</h6>
-          <p> Av. Professor Mário Werneck,26-2° Andar
-              Belo Horizonte-MG,CEP:30455-610
-              comercial@comercial.com.br
-              <img src="" alt="">
-              <img src="" alt="">
-          </p>
-    
-          <div class="enderecos">
-            <h6> LOJA°BH (a 5 km do centro!)</h6>
-            <p> Av. Professor Mário Werneck,26-2° Andar
-                Belo Horizonte-MG,CEP:30455-610
-                comercial@comercial.com.br
-                <img src="" alt="">
-                <img src="" alt="">
-            </p>
-          </div>
-        </div>
-      </div>
-    
+          <footer id="myFooter">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <h2 class="logo"><a href=""> LOGOTIPO </a></h2>
+                      </div>
+
+                    </div>
+                      <div class="col-sm-2">
+                          <ul>
+                              <li><a href="">QUEM SOMOS</a></li>
+                              <li><a href="">GÔNDOLAS</a></li>
+                              <li><a href="">MÓVEIS DE AÇO</a></li>
+                              <li><a href="">ARMAGENAGEM</a></li>
+                              <li><a href="">CONTATO
+                              </a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-2">
+                          <ul>
+                              <li><a href="">FAÇA SEU ORÇAMENTO</a></li>
+                              <li><a href="">SEJA UM COLABORADOR</a></li>
+                              <h5>SIGA-NOS NAS REDES SOCIAIS</h5>
+                              <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+                              <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+                          </ul>
+                      </div>
+                      <div class="col-sm-2">
+                          <ul>
+                              <li><a href="">FAQ</a></li>
+                              <li><a href="om.br/">Telefones</a></li>
+                              <li><a href="">Chat</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </footer>
   </body>
 </html>
